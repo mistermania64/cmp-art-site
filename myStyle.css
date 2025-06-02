@@ -17,6 +17,7 @@ a:hover{
     src: url('fonts/NewClass-w10oz.ttf');
 }
 
+
 /* Cursor */
 body {
     cursor: url("pinkCursor.png"), pointer;
@@ -394,7 +395,7 @@ table a
     position: relative;
     /* max-width: 18%; */
     font-size: 25px;
-    top: 200px;
+    top: 150px;
     /* width: 80%; */
     padding: 0% 4%;
     /* height: 563px;
