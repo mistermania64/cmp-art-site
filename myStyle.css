@@ -12,7 +12,6 @@ a:hover{
 } */
 
 /* Fonts */
-
 @font-face {
     font-family: New-Class;
     src: url('fonts/NewClass-w10oz.ttf');
@@ -20,7 +19,7 @@ a:hover{
 
 /* Cursor */
 body {
-    cursor: url("pinkCursor.png") pointer;
+    cursor: url("pinkCursor.png"), pointer;
 }
 
 .sacramento-regular {
