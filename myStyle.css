@@ -20,7 +20,7 @@ a:hover{
 
 /* Cursor */
 body {
-    cursor: url("pinkCursor.png"), pointer;
+    cursor: url("img/Cursors/pinkCursorTopRight.png"), pointer;
 }
 
 .sacramento-regular {
