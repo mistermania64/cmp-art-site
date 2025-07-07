@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Illustrations</title>
+    <link rel="stylesheet" href="css/myStyle.css">
+
+    <script src="js/imageSlider.js"></script>
+    
+</head>
+<body class="bg-beige">
+<div id = "canvas"> <!-- Overall section -->
+    <div id = "flex-wrapper">
+        <div id="mobileNav"> <!--Sidebar menu-->
+            <h1 style = "padding-left: 6%; padding-top: 3%;">
+                <a href = "index.html" id = "nameLink">Cicely Parris</a>
+            </h1>
+
+            <br>
+            <div class = "flex-col" id="sidebar">
+                <a href="animations.html">Animations</a>
+                <a href="#" onclick="showHidden('visDevLinks')">Visual Development</a>
+
+                <div class="flex-col" id="visDevLinks" style="display: none;">
+                    <a href="characters.html">Characters</a>
+                    <a href="environments.html">Environments</a>
+                </div>
+
+                <a href="3D.html">3D</a>
+                <a href="fine-art.html">Fine Art</a>
+                <a href="illustrations.html" style="color: gray;">Illustrations</a>
+            </div>
+
+            <div class = "flex-col" id="sublinks">
+                <a href = "index.html">About</a>
+                <!-- <a href = "files/CV.pdf" target="_blank">CV</a> -->
+            </div>
+        </div>
+
+        <div id = "image-container">
+            <img id="fullscreen-image" src="" onclick="toggleZoom(this)">
+            <div class="close-btn" onclick="closeFullScreen()">X</div>
+        </div>
+
+        <div class = "grid-container centered" id="illustrations-grid">
+            <label style="font-family: New-Class; padding: 2%; font-size: 40px; grid-area: illustrations-label" class="flex-row centered">Illustrations</label>
+
+            <div class = "image-viewer res-640p" id = "goodMorningSlider" style="grid-area: image-viewer;">
+                <button class = "arrow left" onclick="goodMorningSlider.prevImage()">&#10094;</button>
+                <img id = "goodMorningImg" class="res-640p" src="img/Illustration/good-morning-neon.JPG" alt = "Image Viewer">
+                <button class = "arrow right" onclick="goodMorningSlider.nextImage()">&#10095;</button>
+            </div> 
+
+            <a target="_blank" href="img/Illustration/fullres/girl-with-cow.jpg" style="grid-area: cow;">
+                <img src ="img/Illustration/girl-with-cow.jpg" style="width: 600px; height: 449px;">
+            </a>
+        </div>
+    
+
+    </div>
+</div>
+<script src="js/javascriptFunctions.js"></script>
+<script src="js/fullscreenViewer.js"></script>
+<script src="js/mousetrail.js"></script>
+
+<script>
+    const goodMorningSlider = new ImageSlider('goodMorningSlider', "goodMorningImg", goodMorningArr);
+</script>
+
+
+</body>
+</html>

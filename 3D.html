@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>3D Work</title>
+    <link rel="stylesheet" href="myStyle.css">
+</head>
+<body class="bg-beige">
+
+<script src="js/imageSlider.js"></script>
+    
+<div id = "canvas"> <!-- Overall section -->
+    <button id = "toggleMenuButton" onclick="showHidden('mobileNav')" style="display: none;">Toggle Menu</button>
+    <div id = "flex-wrapper">
+        <div id="mobileNav"> <!--Sidebar menu-->
+            <h1 style = "padding-left: 6%; padding-top: 3%;">
+                <a href = "index.html" id = "nameLink">Cicely Parris</a>
+            </h1>
+
+            <br>
+            <div class = "flex-col" id="sidebar">
+                <a href="animations.html">Animations</a>
+                <!-- <a href="#" onclick="showHidden('visDevLinks')">Visual Development</a> -->
+                <a href="characters.html">Characters</a>
+                <a href="environments.html">Environments</a>
+                
+                <!-- <div class="flex-col" id="visDevLinks" style="display: none;">
+                    <a href="characters.html">Characters</a>
+                    <a href="environments.html">Environments</a>
+                </div> -->
+
+                <a href="fine-art.html">Fine Art</a>
+                <a href="3D.html" style="color: gray;">3D</a>
+                
+                <!-- <a href="illustrations.html">Illustrations</a> -->
+            </div>
+
+            <div class = "flex-col" id="sublinks">
+                <a href = "index.html">About</a>
+                <!-- <a href = "files/CV.pdf" target="_blank">CV</a> -->
+            </div>
+        </div>
+
+        <!-- <div id = "mainContent"> Content next to sidebar -->
+            <div class = "flex-col centered" style="place-content: center;">
+                <label style="font-family: New-Class; padding: 2%; font-size: 40px; align-self: center; justify-self: center;">3D</label>
+                <br><br>
+                <div class="flex-row centered" style="gap: 200px;">
+                    
+                    <div class = "flex-col centered" style="gap: 10px">
+                    
+                        <div class = "image-viewer" id="catSlider" style="grid-area: image-viewer">
+                            <button class = "arrow left" onclick="catSlider.prevImage()">&#10094;</button>
+                            <img id = "catImg" src="img/3D/cat_front.jpg" style = "height: 455px" title = "Different views of a 3D Cat Model.">
+                            <button class = "arrow right" onclick="catSlider.nextImage()">&#10095;</button>
+                        </div> 
+
+                        <label style="font-family: New-Class; padding: 2%; font-size: 30px; align-self: center; justify-self: center;">Cat</label>
+
+                    </div>
+
+                    <div class = "flex-col centered" style="gap: 10px; place-content: center;">
+
+                        <div class = "image-viewer" id = "shipSlider" style="place-self: center;">
+                            <button class = "arrow left" onclick="shipSlider.prevImage()">&#10094;</button>
+                            <img id = "shipImg" src="img/3D/fullres/ship_front.jpg" title = "Different views of a spaceship." style="height: 372px;">
+                            <button class = "arrow right" onclick="shipSlider.nextImage()">&#10095;</button>
+                        </div>
+
+                        <label style="font-family: New-Class; padding: 2%; font-size: 30px; align-self: center; justify-self: center;">Ship</label>
+
+                    </div>
+                     
+                </div>
+            
+            </div>
+        <!-- </div> -->
+    </div>
+</div>
+    <script src="js/javascriptFunctions.js"></script>
+    <script src="js/mousetrail.js"></script>
+    <script>
+        const catSlider = new ImageSlider('catSlider', "catImg", catArr);
+        const shipSlider = new ImageSlider('shipSlider', "shipImg", shipArr);
+    </script>
+</body>
+</html>
