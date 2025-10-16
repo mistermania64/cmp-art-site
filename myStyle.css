@@ -371,6 +371,33 @@ table a
     border: solid 3px black;
 }
 
+#catCarousel, #shipCarousel
+{
+    border: solid 3px black;
+}
+
+#catCarousel
+{
+    height: 455px;
+    width: 455px;
+}
+
+#shipCarousel
+{
+    height: 372px;
+    width: 567px;
+}
+
+.carousel-inner
+{
+    background: #fdf7eb;
+}
+
+.carousel
+{
+    overflow: hidden;
+}
+
 #portrait
 {
     max-width: fit-content;
