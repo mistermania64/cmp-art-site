@@ -21,6 +21,24 @@ a:hover{
 /* Cursor */
 body {
     cursor: url("img/Cursors/pinkCursorTopRight.png"), pointer;
+    line-height: normal;
+    margin: 8px;
+}
+
+html
+{
+    line-height: normal;
+    display: block;
+}
+
+h1
+{
+    font-size: 2em;
+}
+
+a
+{
+    box-sizing: content-box !important;
 }
 
 .sacramento-regular {
@@ -305,6 +323,8 @@ font-style: normal;
     font-family: New-Class;
     text-decoration: none;
     color: black;
+    line-height: normal;
+    font-weight: normal;
 }
 
 /* #nameLink:hover
@@ -355,6 +375,7 @@ table a
     /* color: white; */
     /* float: left; */
     /* border-style: solid; */
+    display: block;
 }
 
 #mainContent
@@ -479,7 +500,7 @@ table#sublinks, th#sublinks, td#sublinks, div#sublinks
     padding-top: 8%;
     /* border-spacing: 10px; */
     min-width: 25%;
-    row-gap: 15px;
+    row-gap: 15px !important;
     /* float: left; */
 }
 
@@ -645,6 +666,7 @@ td a:hover
     #mobileNav
     {
         display: none;
+        box-sizing: content-box !important;
     }
 
     a 
