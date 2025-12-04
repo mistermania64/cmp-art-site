@@ -157,6 +157,8 @@ font-style: normal;
     grid-template-areas: 
         ". animations-label ."
         ". . ."
+        "meow-label . ."
+        "meow . ."
         "cats-label  smoker-label roto-label"
         "cats           smoker       rotoscope"
         "cairo-label    smoker      final-label"
@@ -536,7 +538,7 @@ table#sublinks, th#sublinks, td#sublinks, div#sublinks
     color: grey;
 }
 
-.flex-col > video
+.flex-col > video, .flex-col>iframe
 {
     border: solid 3px black;
     margin-bottom: 20px;
@@ -686,7 +688,7 @@ td a:hover
         border: solid 3px black;
     } */
     
-    .flex-col > video
+    .flex-col > video, iframe
     {
         max-width: 384px;
         max-height: 216px;
