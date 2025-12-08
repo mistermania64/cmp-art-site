@@ -538,7 +538,7 @@ table#sublinks, th#sublinks, td#sublinks, div#sublinks
     color: grey;
 }
 
-.flex-col > video, .flex-col>iframe
+.flex-col > video, .flex-col>iframe, .flex-row>video
 {
     border: solid 3px black;
     margin-bottom: 20px;

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Art City</title>
+    <link rel="stylesheet" href="myStyle.css">
+</head>
+<body class = "bg-beige">
+    <div id = "canvas"> <!-- Overall section -->
+        <button id = "toggleMenuButton" onclick="showHidden('mobileNav')" style="display: none;">Toggle Menu</button>
+        <div id = flex-wrapper>
+            <div id="mobileNav"> <!--Sidebar menu-->
+                <h1 style = "padding-left: 6%; padding-top: 3%;">
+                    <a href = "index.html" id = "nameLink">Cicely Parris</a>
+                </h1>
+    
+                <br>
+                <div class = "flex-col" id="sidebar">
+                    <a href="animations.html">Animations</a>
+                    <!-- <a href="#" onclick="showHidden('visDevLinks')">Visual Development</a> -->
+                    <a href="characters.html">Characters</a>
+                    <a href="environments.html">Environments</a>
+                    
+                    <!-- <div class="flex-col" id="visDevLinks" style="display: none;">
+                        <a href="characters.html">Characters</a>
+                        <a href="environments.html">Environments</a>
+                    </div> -->
+
+                    <a href="fine-art.html">Fine Art</a>
+                    <a href="meow.html">Meow</a>
+                    <a href="fineartcity.html" style="color: gray;">new art city</a>
+                    
+                    <!-- <a href="illustrations.html">Illustrations</a> -->
+                </div>
+
+                <div class = "flex-col" id="sublinks">
+                    <a href = "index.html">About</a>
+                    <!-- <a href = "files/CV.pdf" target="_blank">CV</a> -->
+                </div>
+            </div>
+
+        <div class="flex-col" id="new-art-city-flex-box" class="centered">
+
+            <label id ='sculpting-label' style="font-family: New-Class; padding: 2%; font-size: 40px; grid-area: sculpting-label" class="centered">new art city</label>
+
+            <div class = "flex-row" id="new-art-city-flexbox" style="align-items: center; gap:30px; justify-content:center; margin-bottom: 30px;">
+                
+                <a target="_blank" href="img/sculpting/fullres/motherofpearl.jpg">
+                    <img src="img/sculpting/motherofpearl.jpg"  height="567px">
+                </a>
+
+                <a target="_blank" href="img/sculpting/fullres/poisodon.jpg">
+                    <img src="img/sculpting/poisodon.jpg"  height="567px">
+                </a>
+
+                <a target="_blank" href="img/sculpting/fullres/seahorses.jpg">
+                    <img src="img/sculpting/seahorses.jpg"  height="567px">
+                </a>
+
+                 <a target="_blank" href="img/sculpting/fullres/siren.jpg">
+                    <img src="img/sculpting/siren.jpg"  height="567px">
+                </a>
+
+                <a target="_blank" href="img/sculpting/fullres/seaslug.jpg">
+                    <img src="img/sculpting/seaslug.jpg"  height="567px">
+                </a>
+
+            </div>
+
+            <div class = "flex-row" style="align-items: center; gap:30px; justify-content: center;">
+                    <video src="video/Video-1.m4v" controls class = "res-640p"></video>
+                    <video src="video/Nac (1)-1.m4v" controls class = "res-640p"></video>
+                    <video src="video/Partbvideo-1.m4v" controls class = "res-640p"></video>
+            </div>
+
+                <!-- <img src="img/sculpting/motherofpearl.jpg" width="635.75">
+                <img src ="img/sculpting/poisodon.jpg" height="567px" style="place-self: center;">
+                <img src ="img/sculpting/seahorses.jpg" width="550">
+                
+                <img src ="img/sculpting/siren.jpg" width="496">
+                <img src ="img/sculpting/seaslug.jpg" height="393px"> -->
+          
+                
+        </div>
+</body>
+<script src="js/mousetrail.js"></script>
+</html>
